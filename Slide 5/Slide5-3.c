@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/*Construa um programa que leia dois números e exiba-os em ordem crescente.*/
+/*Questão: Construa um programa que leia dois números e exiba-os em ordem crescente.*/
 
 int main(){
     int Num1, Num2;
