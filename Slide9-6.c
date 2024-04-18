@@ -5,8 +5,8 @@ Após isso o programa deve calcular a quantidade de números pares, a quantidade
 a somatória dos números pares e a somatória dos números ímpares. Ao final, exiba os resultados.*/
 
 int main(){
-    int Numeros[5], i, Pares = 0, Impares = 0, SomatorioPar = 0, SomatorioImpar = 0;
-    for(i = 0; i<5; i++){
+    int Numeros[40], i, Pares = 0, Impares = 0, SomatorioPar = 0, SomatorioImpar = 0;
+    for(i = 0; i<40; i++){
         do{
             printf("Digite o %d numero inteiro: \n", i+1);
             scanf("%d", &Numeros[i]);
