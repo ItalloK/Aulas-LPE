@@ -12,9 +12,25 @@ permitida. O programa deve considerar que o motorista pode não ter ultrapassado
 caso não haverá multa.*/
 
 int main(){
-
+    float Velocidade_Maxima, Velocidade_Atual;
+    do{
+        printf("Digite a velocidade maxima permitida: \n");
+        scanf("%f", &Velocidade_Maxima);
+    }while(Velocidade_Maxima < 0);
+    do{
+        printf("Digite a velocidade em que o motorista passou: \n");
+        scanf("%f", &Velocidade_Atual);
+    }while(Velocidade_Atual < 0);
+    printf("teste: %f \n\n\n", Velocidade_Atual - Velocidade_Maxima);
+    if(Velocidade_Atual - Velocidade_Maxima < 0){
+        printf("Voce nao foi multado.\n");
+    }else if((Velocidade_Atual - Velocidade_Maxima) > 0 && (Velocidade_Atual - Velocidade_Maxima) <= 10){
+        printf("Voce passsou a 10 km/h a mais do permitido e recebeu uma multa de R$ 150,00\n");
+    }else if((Velocidade_Atual - Velocidade_Maxima) > 10 && (Velocidade_Atual - Velocidade_Maxima) <= 30){
+        printf("Voce passou acima da velocidade de 10 a 30 km/h de tolerancia, e recebeu uma multa de R$ 200,00\n");
+    }else if((Velocidade_Atual - Velocidade_Maxima) > 30){
+        printf("Voce passou a  mais de 30 km/h acima do permitido e recebeu uma multa de R$ 300,00\n");
+    } 
     
-
-
     return 0;
 }
