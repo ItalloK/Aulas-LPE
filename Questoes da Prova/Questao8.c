@@ -8,8 +8,8 @@ A) A quantidade de pesos validos informados.
 B) A média dos pesos válidos informados.*/
 
 int main(){
-    int Qnt_Pesos = 0, Soma_Pesos = 0;
-    float Peso, Media_Pesos;
+    int Qnt_Pesos = 0;
+    float Peso, Media_Pesos, Soma_Pesos = 0;;
     do{
         printf("Digite o peso: \n");
         scanf("%f", &Peso);  
@@ -20,6 +20,6 @@ int main(){
     }while(Peso > 0);
     Media_Pesos = Soma_Pesos/Qnt_Pesos;
     printf("A quantidade de pesos validos e: %d\n", Qnt_Pesos);
-    printf("A media dos pesos validos e: %f", Media_Pesos);
+    printf("A media dos pesos validos e: %.2f", Media_Pesos);
     return 0;
 }
