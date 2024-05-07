@@ -9,6 +9,13 @@ vetor e mostre na tela esta soma;
 (d) Mostre na tela cada valor do vetor A, um em cada linha*/
 
 int main(){
-
+    int A[8] = {1, 0, 5, -2, -5, 3, 0, 0};
+    int B = A[0]+A[1]+A[5];
+    printf("A soma dos valores e: %d\n", B); // Valor correto: 4
+    A[4] = 239;
+    int i = 0;
+    for(i = 0; i < 8; i++){
+        printf("Valor %d: %d\n", i, A[i]);
+    }
     return 0;
 }
