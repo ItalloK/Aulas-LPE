@@ -11,5 +11,20 @@ posição do vetor será a somatória de 5 + 1 + 25, e assim por diante.*/
 
 int main(){
 
+    int Matriz[3][3], i, j, Vetor[3] = {0,0,0};
+    for(i = 0; i < 3; i++){
+        for(j = 0; j < 3; j++){
+            printf("Digite o [%d][%d] valor: \n", i, j);
+            scanf("%d", &Matriz[i][j]);
+        }
+    }
+    for(i = 0; i < 3; i++){
+        for(j = 0; j < 3; j++){
+            Vetor[i] += Matriz[j][i];  
+        }
+    }
+    for(i = 0; i<3; i++){
+        printf("A soma da coluna %d e: %d\n", i+1, Vetor[i]);
+    }
     return 0;
 }
